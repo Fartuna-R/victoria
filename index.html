@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathy - онлайн тест</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<button id="scrollTopBtn">⬆</button>
+<div class="bg-shapes scroll-animate">
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<body class="dark">
+  <header>
+    <div class="logo scroll-animate">Pathy</div>
+    <div class="button-wrapper scroll-animate">
+      <div id="notification" class="notification scroll-animate"></div>
+  <button id="theme-toggle">
+  <span class="theme-text scroll-animate">Переключить тему</span>
+  <span class="theme-emoji scroll-animate">🌗</span>
+  </button>
+  <div class="tooltip">Переключить тему</div>
+  <!-- Кнопка -->
+</div>
+  </header>
+
+  <main>
+    <section class="hero scroll-animate">
+      <h1>Добро пожаловать в мир возможностей!</h1>
+      <p>Пройди тест и открой свою идеальную профессию</p>
+      <button class="start-test-btn scroll-animate">Начать</button>
+    </section>
+
+    <section id="test-container" class="test-container scroll-animate" style="display: none;">
+  <div class="test-card scroll-animate">
+    <div class="question scroll-animate" id="question-text"></div>
+    <div class="options scroll-animate" id="options-container"></div>
+    <div class="test-nav scroll-animate">
+      <button id="prev-btn" class="theme-btn scroll-animate">Назад</button>
+      <button id="next-btn" class="start-test-btn scroll-animate">Следующий вопрос</button>
+    </div>
+  </div>
+</section>
+
+    <div class="more-info scroll-animate">
+</div>
+
+
+    <div class="glass" id="header-glass"></div>
+    <div class="glass" id="hero-glass" style="top: auto; bottom: 0; height: 80px;"></div>
+
+    <section class="carousel-section scroll-animate">
+  <h2>НЕДАВНО ПРОШЛИ</h2>
+  <div class="carousel-wrapper scroll-animate">
+    <div class="carousel-track scroll-animate" id="carousel-track"></div>
+  </div>
+</section>
+
+    <section class="more-section">
+  <div id="toggleInfo" class="more-text scroll-animate">
+    Подробнее об онлайн-тесте
+  </div>
+
+  <div id="infoContent" class="info-content">
+  <div class="faq-item scroll-animate">
+    <div class="faq-question">Для чего нужен тест?</div>
+    <div class="faq-answer">Тест помогает определить уровень ваших знаний и навыков, чтобы понять, где стоит улучшить свои умения.</div>
+  </div>
+  <div class="faq-item scroll-animate">
+    <div class="faq-question">В чем его смысл?</div>
+    <div class="faq-answer">Смысл теста - показать реальные сильные и слабые стороны, чтобы корректно планировать обучение или работу.</div>
+  </div>
+  <div class="faq-item scroll-animate">
+    <div class="faq-question">Поможет ли он?</div>
+    <div class="faq-answer">Да, тест даст понимание, на что обратить внимание и как повысить свою эффективность в конкретной области.</div>
+  </div>
+</div>
+  </main>
+
+  <footer>
+  <div class="footer-center">© 2025 Pathy. Все права защищены.</div>
+
+  <div class="footer-right">
+    <div class="footer-item">
+      Выполнила: <strong>Виктория Александровна</strong>
+      <a href="https://t.me/Tik_tok_s1" target="_blank" class="tg-btn">
+        <img src="{{ url_for('static', filename='icon-tg.png') }}" alt="Telegram" width="24" height="24">
+      </a>
+    </div>
+    <div class="footer-item">
+      Разработчик сайта: <strong>Максим Дмитриевич</strong>
+      <a href="https://t.me/de2k25" target="_blank" class="tg-btn">
+        <img src="{{ url_for('static', filename='icon-tg.png') }}" alt="Telegram" width="24" height="24">
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
