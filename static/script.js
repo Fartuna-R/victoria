@@ -640,36 +640,36 @@ const bestMatch = bestTexts[bestMatchKey];
   </div>
 </div>
 
-        <div class="results-actions">
-          <button id="restartTestBtn" class="btn btn-restart">🔄 Пройти заново</button>
-          <button id="rateTestBtn" class="btn">⭐ Оценить тест</button>
-        </div>
-      </div>
+      //   <div class="results-actions">
+      //     <button id="restartTestBtn" class="btn btn-restart">🔄 Пройти заново</button>
+      //     <button id="rateTestBtn" class="btn">⭐ Оценить тест</button>
+      //   </div>
+      // </div>
 
-      <div class="rate-panel">
-        <h3>Оцени тест 🌟</h3>
+      // <div class="rate-panel">
+      //   <h3>Оцени тест 🌟</h3>
 
-        <!-- Имя -->
-        <input type="text" id="username" placeholder="Имя" maxlength="20">
+      //   <!-- Имя -->
+      //   <input type="text" id="username" placeholder="Имя" maxlength="20">
 
-        <!-- Возраст -->
-        <input type="number" id="age" placeholder="Возраст" min="1" max="99" oninput="if(this.value.length>2)this.value=this.value.slice(0,2)">
+      //   <!-- Возраст -->
+      //   <input type="number" id="age" placeholder="Возраст" min="1" max="99" oninput="if(this.value.length>2)this.value=this.value.slice(0,2)">
 
-        <!-- Звёзды -->
-        <div class="stars">
-          <img src="/static/icon-star.png" class="star" data-value="1">
-          <img src="/static/icon-star.png" class="star" data-value="2">
-          <img src="/static/icon-star.png" class="star" data-value="3">
-          <img src="/static/icon-star.png" class="star" data-value="4">
-          <img src="/static/icon-star.png" class="star" data-value="5">
-        </div>
+      //   <!-- Звёзды -->
+      //   <div class="stars">
+      //     <img src="/static/icon-star.png" class="star" data-value="1">
+      //     <img src="/static/icon-star.png" class="star" data-value="2">
+      //     <img src="/static/icon-star.png" class="star" data-value="3">
+      //     <img src="/static/icon-star.png" class="star" data-value="4">
+      //     <img src="/static/icon-star.png" class="star" data-value="5">
+      //   </div>
 
-        <!-- Отзыв -->
-        <textarea id="feedback" placeholder="Оставь отзыв (до 30 символов)" maxlength="30"></textarea>
+      //   <!-- Отзыв -->
+      //   <textarea id="feedback" placeholder="Оставь отзыв (до 30 символов)" maxlength="30"></textarea>
 
-        <!-- Кнопка -->
-        <button id="submitFeedback" class="btn">📩 Отправить отзыв</button>
-      </div>
+      //   <!-- Кнопка -->
+      //   <button id="submitFeedback" class="btn">📩 Отправить отзыв</button>
+      // </div>
     </div>
   `;
   
@@ -953,3 +953,4 @@ document.addEventListener("click", e => {
     createEmojiBurst(x, y);
   }
 });
+
