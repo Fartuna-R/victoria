@@ -519,7 +519,7 @@ footer {
 }
 
 body.dark {
-  --shape-blur: 40px; /* тёмная тема */
+  --shape-blur: 30px; /* тёмная тема */
 }
 
 .shape {
@@ -1042,3 +1042,4 @@ body.dark .btn-restart {
   user-select: none;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
+
