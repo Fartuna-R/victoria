@@ -639,9 +639,6 @@ const bestMatch = bestTexts[bestMatchKey];
     <span>${percentages.entrepreneurial}%</span>
   </div>
 </div>
-        <div class="results-actions">
-          <button id="restartTestBtn" class="btn btn-restart">🔄 Пройти заново</button>
-        </div>
       </div>
     </div>
   `;
@@ -926,5 +923,6 @@ document.addEventListener("click", e => {
     createEmojiBurst(x, y);
   }
 });
+
 
 
